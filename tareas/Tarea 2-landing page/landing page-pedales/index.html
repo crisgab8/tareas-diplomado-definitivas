@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"><img src="assets/img/nbotreplaceimg%2F807fb39cdf0a2cc26bd7c0ec0855255d%2F358c79eefd4d28178272db02f7a2a4ce.gif" class="imagen-principal"></div>
+                <div class="col-md-3" style="margin-top:100px;">
+                    <div class="textos-div">
+                        <h1 class="bold-h1" style="font-family:Montserrat, sans-serif;">Sé como juan</h1>
+                        <h1 style="font-family:Montserrat, sans-serif;">+ Tiene flow</h1>
+                        <h1 style="font-family:Montserrat, sans-serif;">+ Tiene estilo</h1>
+                        <h1 style="font-family:Montserrat, sans-serif;">+ Y lo verdadero pedale'</h1>
+                    </div>
+                    
+                </div>
+				
+				<div class="col-md-3 textos-div">
+				
+					
+					<form>
+                        <div class="form-group"><input placeholder="Nombre" id="nombre" class="form-control" type="text"></div>
+                        <div class="form-group"><input placeholder="Apellido" id="apellido" class="form-control" type="text"></div>
+                        <div class="form-group"><input placeholder="Cédula"  id="cedula" class="form-control" type="text"></div>
+                        <div class="form-group"><input placeholder="Telefono" id="telefono" class="form-control" type="tel"></div>
+                        <div class="form-group"><input placeholder="Email" id="email" class="form-control" type="email"></div>
+						<button class="btn" onclick="guardarDatos();" type="submit" style="background-color:#ed1c24;" ><h1 style="font-family:Montserrat, sans-serif;">Comprar el flow </h1></button>
+                    </form>
+				</div>
+            </div>
+			
+			
+			<div class="row">
+			
+				<div class="col-md-offset-6 col-md-6">
+									<img src="assets/img/Xtreme-logo-1.png" class="logo">
+
+				</div>
+				
+			</div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	<script>
+	
+		function guardarDatos(){
+			con = {};
+			con.nombre = document.getElementById('nombre').value;
+			con.apellido = document.getElementById('apellido').value;
+			con.cedula = document.getElementById('cedula').value;
+			con.telefono = document.getElementById('telefono').value;
+			con.correo = document.getElementById('email').value;
+			localStorage.setItem("contacto", JSON.stringify(con));			
+			
+		
+		}
+	
+	</script>
+	
+</body>
+
+</html>

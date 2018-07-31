@@ -1,0 +1,39 @@
+body {
+  background-color:rgb(153,217,232);
+  background-size:cover;
+}
+
+.imagen-principal {
+  width:700px;
+  bottom:-98px;
+  position:relative;
+}
+
+.imagen-principal {
+}
+
+.textos-div h1 {
+  color:#fff;
+  text-align:right;
+}
+
+.textos-div {
+  margin-top:129px;
+}
+
+.bold-h1 {
+  font-weight:900;
+}
+
+.first-div {
+  height:301px;
+}
+
+.logo {
+  width:275px;
+  text-align:right;
+  position:relative;
+  right:-248px;
+  margin-top:48px;
+}
+
